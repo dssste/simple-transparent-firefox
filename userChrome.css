@@ -12,15 +12,13 @@ toolbar {
 	background: transparent !important;
 }
 
+#sidebar-header{
+	display: none;
+}
+
 /* window transparencies */
 #main-window {
 	background: var(--bg) !important;
-}
-
-*,
-*::before,
-*::after {
-	font-family: Inconsolata LGC Nerd Font Mono;
 }
 
 #alltabs-button,
@@ -32,7 +30,7 @@ toolbar {
 }
 
 #titlebar {
-	z-index: 2;
+	display: none;
 }
 
 @media (-moz-bool-pref: "animatedFox.squareCorners") {
@@ -80,7 +78,7 @@ toolbar {
 		right: 30px;
 	}
 
-	top: 3.5rem;
+	top: 6.5rem;
 	z-index: 1;
 	transition: opacity 0.3s ease !important;
 	border-radius: 10px;
@@ -103,7 +101,7 @@ toolbar {
 
 #navigator-toolbox {
 	border-bottom: none !important;
-	background: transparent !important;
+	/*background: transparent !important;*/
 }
 
 #tabs-newtab-button {
